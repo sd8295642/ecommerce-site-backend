@@ -51,7 +51,7 @@ router.put('/:id', async (req, res) => {
         where: {id: req.params.id}
       }
     );
-    res.status(200).json(TagData);
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(400).json(err);
   }
